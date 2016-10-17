@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+jwitter the sql
+{% endblock %}
+
+{% block head %}
+<script type="text/javascript" src="{{ url_for('static', filename='index/js/script.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <h1>Welcome to jwitter</h1>
+    <div class="input-field col s6">
+        <input placeholder="Bill Nye" id="username" type="text" class="validate">
+        <label for="username">Username</label>
+    </div>
+    <div class="input-field col s6">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+    </div>
+    <a id="login" class="waves-effect waves-light btn">Login</a>
+    <a id="signup" class="waves-effect waves-lght btn">Signup</a>
+{% endblock %}
